@@ -1,0 +1,5 @@
+{% set image = resize_image(path=path, width=5000, height=5000, op="fit", quality=50) %}
+<div style="margin: 5px 25px">
+  <img src="{{ image.url }}" style="margin: 5px 0px" />
+  <i>{{ caption }}</i>
+<div>

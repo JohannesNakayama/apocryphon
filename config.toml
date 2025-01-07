@@ -1,0 +1,33 @@
+# The URL the site will be built for
+base_url = "https://apocryphon.de"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "boring"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+homepage_title = "apocryphon."
+homepage_subtitle = "musik ohne sinn und verstand."
+homepage_img_url = "/2024-12-title-image.jpg"
+
+# Refer https://support.google.com/analytics/answer/9539598?hl=en
+google_analytics_measurement_id = ""
+
+# # Refer https://icons8.com/line-awesome for list of icons
+# # Both `url` and `icon` should be set for each entry
+# [[extra.social]]
+# url = "https://github.com/ssiyad/boring"
+# icon = "lab la-github"
+
+# [[extra.social]]
+# url = "https://github.com/ssiyad"
+# icon = "lar la-user-circle"
