@@ -8,6 +8,14 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true
+      - run: mkdir templates/
+      - name: build_css
+        run: |
+          cd themes/boring
+          yarn install --frozen-lockfile
+          yarn build
       - name: build_and_deploy
         uses: shalzz/zola-deploy-action@master
         env:
